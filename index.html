@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skillora - Freelancing Marketplace</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="#" class="logo">
+            <span class="logo-icon">
+                <i class="fa-solid fa-bolt"></i>
+            </span>
+            Skillora
+        </a>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="#home" class="active">Home</a>
+            <a href="#freelancers">Find Freelancers</a>
+            <a href="#jobs">Find Jobs</a>
+            <a href="#about">About</a>
+
+            <div class="mobile-auth">
+                <button class="login-btn open-login">Login</button>
+                <button class="register-btn open-register">Register</button>
+            </div>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="login-btn open-login">Login</button>
+            <button class="register-btn open-register">Register</button>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-bg-circle circle-one"></div>
+    <div class="hero-bg-circle circle-two"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <div class="hero-badge">
+                <i class="fa-solid fa-circle-check"></i>
+                Trusted by 50,000+ professionals
+            </div>
+
+            <h1>
+                Find the right
+                <span>talent</span>
+                for your next project.
+            </h1>
+
+            <p>
+                Connect with skilled freelancers, discover amazing services,
+                and turn your ideas into reality.
+            </p>
+
+            <div class="hero-search">
+
+                <div class="search-input">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input
+                        type="text"
+                        id="heroSearch"
+                        placeholder="Search for services or freelancers..."
+                    >
+                </div>
+
+                <select id="searchCategory">
+                    <option value="all">All Categories</option>
+                    <option value="web">Web Development</option>
+                    <option value="design">Graphic Design</option>
+                    <option value="mobile">Mobile Development</option>
+                    <option value="data">Data Analysis</option>
+                    <option value="marketing">Digital Marketing</option>
+                </select>
+
+                <button id="searchBtn" class="search-btn">
+                    Search
+                </button>
+
+            </div>
+
+            <div class="popular-searches">
+                <span>Popular:</span>
+                <button data-search="Web Development">Web Development</button>
+                <button data-search="Logo Design">Logo Design</button>
+                <button data-search="WordPress">WordPress</button>
+                <button data-search="SEO">SEO</button>
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="hero-card-main">
+
+                <div class="floating-tag">
+                    <i class="fa-solid fa-circle-check"></i>
+                    Project Completed
+                </div>
+
+                <div class="hero-person">
+                    <div class="person-avatar">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <div>
+                        <h3>Sarah Williams</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+
+                    <div class="verified">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                </div>
+
+                <div class="project-preview">
+                    <div class="project-image">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+
+                    <div class="project-info">
+                        <h4>Modern SaaS Dashboard</h4>
+
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <strong>4.9</strong>
+                            <span>(128 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-price">
+                    <span>Starting from</span>
+                    <strong>$120</strong>
+                </div>
+
+            </div>
+
+
+            <div class="floating-stat stat-one">
+                <div class="stat-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <div>
+                    <strong>50K+</strong>
+                    <span>Freelancers</span>
+                </div>
+            </div>
+
+
+            <div class="floating-stat stat-two">
+                <div class="stat-icon green">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+
+                <div>
+                    <strong>120K+</strong>
+                    <span>Projects Done</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= TRUST ================= -->
+
+<section class="trusted">
+    <div class="container">
+
+        <p>Trusted by professionals and businesses worldwide</p>
+
+        <div class="trusted-logos">
+            <span><i class="fa-brands fa-google"></i> Google</span>
+            <span><i class="fa-brands fa-microsoft"></i> Microsoft</span>
+            <span><i class="fa-brands fa-spotify"></i> Spotify</span>
+            <span><i class="fa-brands fa-airbnb"></i> Airbnb</span>
+            <span><i class="fa-brands fa-slack"></i> Slack</span>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="section categories-section" id="categories">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">EXPLORE</span>
+                <h2>Popular Categories</h2>
+                <p>Find the perfect skills for your next project.</p>
+            </div>
+
+            <a href="#freelancers" class="view-all">
+                View all
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <div class="category-grid">
+
+            <div class="category-card" data-category="web">
+                <div class="category-icon purple">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>12,450+ freelancers</p>
+                <i class="fa-solid fa-arrow-right card-arrow"></i>
+            </div>
+
+            <div class="category-card" data-category="design">
+                <div class="category-icon pink">
+                    <i class="fa-solid fa-pen-nib"></i>
+                </div>
+                <h3>Graphic Design</h3>
+                <p>9,830+ freelancers</p>
+                <i class="fa-solid fa-arrow-right card-arrow"></i>
+            </div>
+
+            <div class="category-card" data-category="mobile">
+                <div class="category-icon blue">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+                <h3>Mobile Development</h3>
+                <p>7,620+ freelancers</p>
+                <i class="fa-solid fa-arrow-right card-arrow"></i>
+            </div>
+
+            <div class="category-card" data-category="data">
+                <div class="category-icon orange">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <h3>Data Analysis</h3>
+                <p>5,240+ freelancers</p>
+                <i class="fa-solid fa-arrow-right card-arrow"></i>
+            </div>
+
+            <div class="category-card" data-category="marketing">
+                <div class="category-icon green">
+                    <i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <h3>Digital Marketing</h3>
+                <p>8,910+ freelancers</p>
+                <i class="fa-solid fa-arrow-right card-arrow"></i>
+            </div>
+
+            <div class="category-card" data-category="video">
+                <div class="category-icon red">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <h3>Video & Animation</h3>
+                <p>4,670+ freelancers</p>
+                <i class="fa-solid fa-arrow-right card-arrow"></i>
+            </div>
+
+            <div class="category-card" data-category="writing">
+                <div class="category-icon cyan">
+                    <i class="fa-solid fa-pen"></i>
+                </div>
+                <h3>Writing & Translation</h3>
+                <p>6,340+ freelancers</p>
+                <i class="fa-solid fa-arrow-right card-arrow"></i>
+            </div>
+
+            <div class="category-card" data-category="business">
+                <div class="category-icon yellow">
+                    <i class="fa-solid fa-chart-pie"></i>
+                </div>
+                <h3>Business & Finance</h3>
+                <p>3,920+ freelancers</p>
+                <i class="fa-solid fa-arrow-right card-arrow"></i>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="section how-section" id="about">
+
+    <div class="container">
+
+        <div class="center-heading">
+            <span class="section-label">SIMPLE PROCESS</span>
+            <h2>How Skillora Works</h2>
+            <p>Everything you need to get your project completed.</p>
+        </div>
+
+
+        <div class="steps">
+
+            <div class="step">
+
+                <div class="step-number">01</div>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+
+                <h3>Find Talent</h3>
+
+                <p>
+                    Search through thousands of skilled freelancers
+                    based on your requirements.
+                </p>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div class="step">
+
+                <div class="step-number">02</div>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+
+                <h3>Connect & Discuss</h3>
+
+                <p>
+                    Discuss your project requirements, timeline,
+                    and budget with freelancers.
+                </p>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <div class="step">
+
+                <div class="step-number">03</div>
+
+                <div class="step-icon">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+
+                <h3>Get It Done</h3>
+
+                <p>
+                    Collaborate, receive quality work, and
+                    complete your project successfully.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= FREELANCERS ================= -->
+
+<section class="section freelancer-section" id="freelancers">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">TOP TALENT</span>
+                <h2>Meet Our Freelancers</h2>
+                <p>Work with professionals who deliver exceptional results.</p>
+            </div>
+
+            <div class="filter-buttons">
+
+                <button class="filter-btn active" data-filter="all">
+                    All
+                </button>
+
+                <button class="filter-btn" data-filter="developer">
+                    Developers
+                </button>
+
+                <button class="filter-btn" data-filter="designer">
+                    Designers
+                </button>
+
+                <button class="filter-btn" data-filter="marketing">
+                    Marketing
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="freelancer-grid" id="freelancerGrid">
+
+            <!-- Freelancer 1 -->
+
+            <article class="freelancer-card" data-role="developer">
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <div class="profile-area">
+
+                    <div class="profile-image purple-bg">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <span class="online"></span>
+
+                </div>
+
+                <h3>Alex Morgan</h3>
+
+                <p class="job-title">Full Stack Developer</p>
+
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <strong>4.9</strong>
+                    <span>(86)</span>
+                </div>
+
+                <div class="skills">
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Python</span>
+                </div>
+
+                <div class="card-bottom">
+                    <div>
+                        <small>Starting at</small>
+                        <strong>$45/hr</strong>
+                    </div>
+
+                    <button class="view-profile">
+                        View Profile
+                    </button>
+                </div>
+
+            </article>
+
+
+            <!-- Freelancer 2 -->
+
+            <article class="freelancer-card" data-role="designer">
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <div class="profile-area">
+
+                    <div class="profile-image pink-bg">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <span class="online"></span>
+
+                </div>
+
+                <h3>Emily Carter</h3>
+
+                <p class="job-title">UI/UX Designer</p>
+
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <strong>5.0</strong>
+                    <span>(124)</span>
+                </div>
+
+                <div class="skills">
+                    <span>Figma</span>
+                    <span>UI Design</span>
+                    <span>Branding</span>
+                </div>
+
+                <div class="card-bottom">
+                    <div>
+                        <small>Starting at</small>
+                        <strong>$35/hr</strong>
+                    </div>
+
+                    <button class="view-profile">
+                        View Profile
+                    </button>
+                </div>
+
+            </article>
+
+
+            <!-- Freelancer 3 -->
+
+            <article class="freelancer-card" data-role="marketing">
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <div class="profile-area">
+
+                    <div class="profile-image orange-bg">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <span class="online"></span>
+
+                </div>
+
+                <h3>Daniel Smith</h3>
+
+                <p class="job-title">Digital Marketing Expert</p>
+
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <strong>4.8</strong>
+                    <span>(73)</span>
+                </div>
+
+                <div class="skills">
+                    <span>SEO</span>
+                    <span>Google Ads</span>
+                    <span>Analytics</span>
+                </div>
+
+                <div class="card-bottom">
+                    <div>
+                        <small>Starting at</small>
+                        <strong>$30/hr</strong>
+                    </div>
+
+                    <button class="view-profile">
+                        View Profile
+                    </button>
+                </div>
+
+            </article>
+
+
+            <!-- Freelancer 4 -->
+
+            <article class="freelancer-card" data-role="developer">
+
+                <button class="favorite">
+                    <i class="fa-regular fa-heart"></i>
+                </button>
+
+                <div class="profile-area">
+
+                    <div class="profile-image blue-bg">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <span class="online"></span>
+
+                </div>
+
+                <h3>Michael Lee</h3>
+
+                <p class="job-title">Mobile App Developer</p>
+
+                <div class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <strong>4.9</strong>
+                    <span>(91)</span>
+                </div>
+
+                <div class="skills">
+                    <span>Flutter</span>
+                    <span>Android</span>
+                    <span>iOS</span>
+                </div>
+
+                <div class="card-bottom">
+                    <div>
+                        <small>Starting at</small>
+                        <strong>$40/hr</strong>
+                    </div>
+
+                    <button class="view-profile">
+                        View Profile
+                    </button>
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= SERVICES ================= -->
+
+<section class="section services-section" id="jobs">
+
+    <div class="container">
+
+        <div class="center-heading">
+
+            <span class="section-label">POPULAR SERVICES</span>
+
+            <h2>What are you looking for?</h2>
+
+            <p>
+                Explore popular services offered by our talented community.
+            </p>
+
+        </div>
+
+
+        <div class="service-grid">
+
+            <article class="service-card">
+
+                <div class="service-image web-image">
+                    <i class="fa-solid fa-code"></i>
+                </div>
+
+                <div class="service-content">
+
+                    <div class="service-user">
+                        <div class="small-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <span>James Wilson</span>
+                    </div>
+
+                    <h3>
+                        I will build a modern responsive website for your business
+                    </h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <strong>4.9</strong>
+                        <span>120 reviews</span>
+                    </div>
+
+                    <div class="service-footer">
+                        <span>Starting at</span>
+                        <strong>$80</strong>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-image design-image">
+                    <i class="fa-solid fa-palette"></i>
+                </div>
+
+                <div class="service-content">
+
+                    <div class="service-user">
+                        <div class="small-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <span>Sophia Adams</span>
+                    </div>
+
+                    <h3>
+                        I will design a professional modern brand identity
+                    </h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <strong>5.0</strong>
+                        <span>98 reviews</span>
+                    </div>
+
+                    <div class="service-footer">
+                        <span>Starting at</span>
+                        <strong>$65</strong>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <article class="service-card">
+
+                <div class="service-image marketing-image">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <div class="service-content">
+
+                    <div class="service-user">
+                        <div class="small-avatar">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <span>Olivia Brown</span>
+                    </div>
+
+                    <h3>
+                        I will grow your business with an effective SEO strategy
+                    </h3>
+
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <strong>4.8</strong>
+                        <span>76 reviews</span>
+                    </div>
+
+                    <div class="service-footer">
+                        <span>Starting at</span>
+                        <strong>$50</strong>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ================= CTA ================= -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta">
+
+            <div class="cta-content">
+
+                <span class="section-label">GET STARTED TODAY</span>
+
+                <h2>
+                    Turn your skills into
+                    <span>opportunities.</span>
+                </h2>
+
+                <p>
+                    Join thousands of talented professionals already
+                    growing their careers on Skillora.
+                </p>
+
+                <div class="cta-buttons">
+                    <button class="cta-primary open-register">
+                        Become a Freelancer
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+
+                    <button class="cta-secondary">
+                        Find a Freelancer
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="cta-icon">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-about">
+
+                <a href="#" class="logo footer-logo">
+                    <span class="logo-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </span>
+                    Skillora
+                </a>
+
+                <p>
+                    The modern freelancing marketplace connecting
+                    talented professionals with businesses worldwide.
+                </p>
+
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>For Clients</h3>
+
+                <a href="#">Find Freelancers</a>
+                <a href="#">Post a Job</a>
+                <a href="#">Browse Services</a>
+                <a href="#">How It Works</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>For Freelancers</h3>
+
+                <a href="#">Find Jobs</a>
+                <a href="#">Create Profile</a>
+                <a href="#">Become a Seller</a>
+                <a href="#">Success Stories</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Company</h3>
+
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Careers</a>
+                <a href="#">Privacy Policy</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Skillora. All rights reserved.
+            </p>
+
+            <div>
+                <span>Made for freelancers</span>
+                <i class="fa-solid fa-heart"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= LOGIN MODAL ================= -->
+
+<div class="modal" id="loginModal">
+
+    <div class="modal-box">
+
+        <button class="close-modal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-icon">
+            <i class="fa-solid fa-right-to-bracket"></i>
+        </div>
+
+        <h2>Welcome Back</h2>
+
+        <p>Login to your Skillora account.</p>
+
+        <form>
+
+            <label>Email Address</label>
+
+            <div class="form-input">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="you@example.com" required>
+            </div>
+
+
+            <label>Password</label>
+
+            <div class="form-input">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+
+
+            <button type="submit" class="modal-submit">
+                Login
+            </button>
+
+        </form>
+
+        <p class="modal-switch">
+            Don't have an account?
+            <button class="switch-register">Register</button>
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- ================= REGISTER MODAL ================= -->
+
+<div class="modal" id="registerModal">
+
+    <div class="modal-box">
+
+        <button class="close-modal">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-icon">
+            <i class="fa-solid fa-user-plus"></i>
+        </div>
+
+        <h2>Create Account</h2>
+
+        <p>Join thousands of professionals on Skillora.</p>
+
+        <form>
+
+            <label>Full Name</label>
+
+            <div class="form-input">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Your name" required>
+            </div>
+
+
+            <label>Email Address</label>
+
+            <div class="form-input">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="you@example.com" required>
+            </div>
+
+
+            <label>Password</label>
+
+            <div class="form-input">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="Create password" required>
+            </div>
+
+
+            <button type="submit" class="modal-submit">
+                Create Account
+            </button>
+
+        </form>
+
+        <p class="modal-switch">
+            Already have an account?
+            <button class="switch-login">Login</button>
+        </p>
+
+    </div>
+
+</div>
+
+
+<div class="toast" id="toast">
+
+    <i class="fa-solid fa-circle-check"></i>
+
+    <div>
+        <strong>Success</strong>
+        <p id="toastMessage">Action completed.</p>
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
